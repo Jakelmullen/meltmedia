@@ -1,0 +1,496 @@
+// +++++++++++++++ Variables +++++++++++++++
+
+$serif: 'Slabo 27px', serif;
+$sans-serif: Helvetica, sans-serif;
+$blue: #89B8EA;
+$charcoal: #B3B3B3;
+
+
+// +++++++++++++++ Formatting +++++++++++++++
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+a, p {
+  font: $sans-serif;
+  font-weight: light;
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6  {
+  font: $serif;
+  font-family: 'Slabo 27px', serif;
+}
+
+h2 {
+  font-size: 5.2rem;
+}
+
+h3 {
+  font-family: 'adelle';
+  font-weight: 200;
+  font-size: 4.4rem;
+}
+
+h4 {
+  font-size: 3.6rem;
+}
+
+a, p, input, textarea {
+  font-size: 1.6rem;
+  font-weight: 100;
+  line-height: 3.0rem;
+}
+
+strong {
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+}
+// +++++++++++++++ Animations +++++++++++++++
+
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+// +++++++++++++++ navigation +++++++++++++++
+
+.logo-container {
+	width: 57px;
+	height: 57px;
+	flex-basis: 57px;
+}
+
+.logo {
+  max-width: 100%;
+  top: 25px;
+  left: 10px;
+}
+
+header {
+  width: 100%;
+  padding: 10px 0px 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  position: inline;
+
+}
+
+.links {
+  width: 350px;
+  position: inline;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: center;
+  padding-right: 0;
+
+  a {
+    padding: 0px;
+    margin: 0px 8px;
+    font-family: 'adelle', serif;
+    font-weight: 200;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.0);
+
+    &:hover, &.active {
+      border-bottom: 3px solid #2C2C2C;
+      cursor: pointer;
+    }
+  }
+}
+
+// +++++++++++++++ Heroic Content +++++++++++++++
+
+.hero-section {
+  background-image: url("../img/main-background.png");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  background-attachment: fixed;
+  max-width: 100%;
+  height: 100%;
+
+  h2 {
+    color: #fff;
+    font-family: "adelle";
+    font-weight: 300;
+    margin-bottom: 0px;
+    margin-top: 5px;
+  }
+}
+
+.wrapper {
+  padding: 4%;
+}
+
+.hero-content {
+  padding: 30px 0px;
+  p {
+    margin-bottom: 30px;
+  }
+
+  a:hover {
+    border-color: $charcoal;
+    color: $charcoal;
+  }
+}
+
+.button {
+  width: auto;
+  text-decoration: none;
+  padding: 10px 30px;
+  border: 2px solid #fff;
+}
+
+.mobile-picture {
+  display: none;
+}
+
+// +++++++++++++++ What We Do +++++++++++++++
+
+.what-we-do {
+  height: 100%;
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+
+  h3 {
+    color: $blue;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+  p {
+    color: $charcoal;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  figure {
+    width: 200px;
+    margin: 0 auto;
+
+  }
+}
+
+// +++++++++++++++ Careers +++++++++++++++
+
+.careers {
+  height: 100%;
+  width: 100%;
+  padding: 50px 20px;
+  background-image: url("../img/careers.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  h3 {
+    color: #fff;
+    margin-bottom: 20px;
+    margin-top: 0px;
+  }
+
+  a:hover, a:active {
+    color: $blue;
+    border-color: $blue;
+  }
+}
+
+// +++++++++++++++ Video +++++++++++++++
+
+.video {
+  height: 100%;
+  padding: 20px 0px;
+  background-color: #e9e9e9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  iframe {
+    width: 100%;
+    height: 250px;
+    align-self: center;
+  }
+}
+
+// +++++++++++++++ Map +++++++++++++++
+
+.map {
+  position: relative;
+
+  .map-code  {
+    display: none;
+  }
+
+  .address {
+    background: rgba(0, 0, 0, .5);
+    padding: 20px;
+    width: 300px;
+    margin: auto;
+    margin-top: 10px;
+
+    h4 {
+      color: white;
+      margin: 5px;
+    }
+  }
+}
+
+// +++++++++++++++ Contact Form +++++++++++++++
+
+.contact-form {
+  height: 100%;
+  text-align: center;
+  color: $blue;
+
+  h3 {
+    margin: 10px 0px;
+  }
+
+  p {
+    padding: 0px 20px;
+    color: $charcoal;
+  }
+
+  .button {
+    border-color: $charcoal;
+    color: $charcoal;
+  }
+
+  a {
+    border: 1px solid $charcoal;
+
+    &:hover, &:active {
+      color: $blue;
+      border-color: $blue;
+    }
+  }
+}
+
+.form {
+  display: block;
+  margin-bottom: 20px;
+
+
+  input {
+    height: 30px;
+    width: 80%;
+    padding: 8px;
+    margin: 10px;
+    color: $charcoal;
+
+    &:active {
+      border-color: $blue;
+    }
+  }
+
+  textarea {
+    height: 200px;
+    width: 80%;
+    text-align: left;
+    border-color: $charcoal;
+  }
+}
+
+// +++++++++++++++ Footer +++++++++++++++
+
+.foot {
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  margin-top: 20px;
+  text-align: center;
+  background-color: $blue;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+
+@media (min-width: 760px) {
+  // +++++++++++++++ navigation +++++++++++++++
+  .links {
+    width: 500px;
+
+    a {
+      height: 35px;
+    }
+  }
+  // +++++++++++++++ Heroic Content +++++++++++++++
+  .mobile-picture {
+    display: flex;
+
+    img {
+      min-width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .hero-copy {
+      width: 40%;
+    }
+  }
+
+  // +++++++++++++++ What We Do +++++++++++++++
+  .what-we-do  {
+    figure {
+      width: auto;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  // +++++++++++++++ Video +++++++++++++++
+  .video{
+    iframe {
+      width: 80%;
+      height: 500px;
+    }
+  }
+
+  // +++++++++++++++ Map +++++++++++++++
+
+
+  .map {
+
+    .map-code {
+      display: block;
+    }
+
+    .address {
+      position: absolute;
+      top: 60px;
+      left: 60px;
+
+      p {
+        line-height: 2rem;
+      }
+    }
+  }
+
+  // +++++++++++++++ Contact Form +++++++++++++++
+
+  .wrapper-two {
+    padding-top: 0px;
+  }
+
+  .form {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .submit {
+    margin-bottom: 20px;
+  }
+  .name {
+    width: 10%;
+  }
+
+  .email {
+    width: auto;
+  }
+
+  .top-row {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+
+    input {
+      width: 48%;
+      margin: 0 auto;
+    }
+
+    .name {
+      margin-left: 0px;
+    }
+
+    .email {
+      margin-right: 0px;
+    }
+  }
+}
+
+@media (min-width: 1024px){
+  .address {
+    left: 50px;
+  }
+}

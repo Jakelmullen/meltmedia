@@ -113,7 +113,7 @@ header {
     font-weight: 200;
     border-bottom: 3px solid transparent; }
     .links a:hover, .links a.active {
-      border-bottom: 3px solid #2C2C2C;
+      border-bottom: 3px solid pink;
       cursor: pointer; }
 
 .hero-section {

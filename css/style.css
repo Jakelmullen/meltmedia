@@ -241,7 +241,8 @@ header {
     width: 80%;
     padding: 8px;
     margin: 10px;
-    color: #B3B3B3; }
+    color: #B3B3B3;
+    background: tomato; }
     .form input:active {
       border-color: #89B8EA; }
   .form textarea {

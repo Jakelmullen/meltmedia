@@ -32,7 +32,8 @@ a, p, input, textarea {
   text-decoration: none; }
 
 strong {
-  font-weight: bold; }
+  font-weight: bold;
+  color: gold; }
 
 img {
   max-width: 100%; }
